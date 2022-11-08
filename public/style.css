@@ -1,0 +1,75 @@
+h1 {
+	justify-content: center;
+	text-align: center;
+	color: #101718;
+	font-size: 60px;
+}
+h2 {
+	justify-content: center;
+	text-align: center;
+	color: #0a0316;
+	font-size: 30px;
+}
+p {
+	text-align: left;
+	margin-top: 150px;
+}
+html {
+	background-color: rgb(23, 29, 27);
+}
+body {
+	height: 700px;
+	width: 900px;
+	margin: 2em auto 2em;
+	padding: 5px;
+	position: relative;
+}
+
+.sessionData {
+	width: 320px;
+	padding: 5px;
+	margin: -10px;
+	float: inline-start;
+}
+
+table {
+	width: 800px;
+	padding: 1px;
+	margin: 10px;
+	float: left;
+}
+
+.login-pg {
+	background-image: url("Dice.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;
+}
+
+.signup-pg {
+	background-image: url("Dice.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.betting-pg {
+	background-image: url("Dice.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;
+}
+
+.tab {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+input[type="button"],
+input[type="submit"] {
+	color: #000000;
+	width: 100px;
+	height: 30px;
+	background-color: #d3d3d3;
+	border: 1px solid;
+	border-color: rgb(120, 221, 120) rgb(46, 110, 46) rgb(110, 185, 110)
+		rgb(128, 223, 128);
+}

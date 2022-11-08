@@ -1,0 +1,27 @@
+<html class="login-pg">
+<% if session[:message] %>
+  <h3> <%= session[:message] %> </h3>
+  <% session[:message] = nil %>
+<% end %>
+<div class="container" style="justify-content: center; justify-items: center">
+<form action="/login" style="padding-top: 40px" method='post'>
+  <div class="form-group">
+    <label for="username">User Name</label>
+    <input type="text" class="form-control" id="username" name="username" aria-describedby="Name" placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name = "password" placeholder="Enter password">
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" value="Log On" style="text-align:center">Log On</button>
+</form></div>
+
+<div style="margin-left: 10px; padding-bottom: 40px">
+  <form action="/signup" method='get'>
+    <button type="submit" class="btn btn-primary" value="Sign Up">Sign Up</button>
+  </form>
+</div>
+</html>
+
+

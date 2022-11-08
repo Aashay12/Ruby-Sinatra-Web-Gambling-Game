@@ -1,0 +1,68 @@
+<html class="betting-pg">
+<h3> <u>Place your bet </u></h3>
+  <h5>Enter a dice number between <u> 1 to 6</u></h5>
+  <hr>
+  <% if session[:message] %>
+    <h3> <%= session[:message] %> </h3>
+    <hr>
+    <% session[:message] = nil %>
+  <% end %>
+  <style>
+    .bettingSec  {float: left; font-family: 'Montserrat', sans-serif;}
+    .sessionData {float: left;font-family: 'Montserrat', sans-serif;}
+    .bettingSec  {width: 50%; height: 20%;font-family: 'Montserrat', sans-serif;}
+    .sessionData {width: 50%; height: 20%;font-family: 'Montserrat', sans-serif;}
+    .win {float: left;font-family: 'Montserrat', sans-serif;}
+    .loss {float: left;font-family: 'Montserrat', sans-serif;}
+    .profit {float: right;font-family: 'Montserrat', sans-serif;}
+  </style>
+
+  <form action="/bet" method="post">
+    <div class="container" style="text-align:left;">
+      <div class="bettingSec">
+        <br>
+        Enter your Bet: <input type='text' name="money"> </input><br><br>
+        Enter the number: <input type='text' name="number"> </input><br><br>
+        <button type="submit" class="btn btn-primary" value="Bet">Bet</button>
+      </div>
+
+      <div class="sessionData" style="float: right; text-align: center; border: #0a0316; border-left:5px black">
+        <h4>Current Winnings</h4>
+        Total win<br>
+        <input type='text' name='win' value=<%= @winSess %> disabled></input><br>
+        Total loss<br>
+        <input type='text' name='loss' value=<%= @lossSess %> disabled ></input><br>
+        Total profit<br>
+        <input type='text' name='profit' value=<%= @profitSess %> disabled ></input><br>
+      </div>
+      <br><br><br>
+    </div>
+
+    <br><br><br><br><br>
+    <hr>
+   <p style= "color: black; font-weight: bold; font-size:20px"> Your Overall Earnings </p>
+    <div class = "accountHistory" >
+      <table style="border: #f1f1f1">
+        <tr>
+        <div class ="abc">
+        <td width=50%>
+           Total Win <br>
+           <input type='text' name='totalWins' value=<%= @totalWinsdb %> disabled></input><br>
+        </td>
+        <td width=50%>
+          Total Loss <br>
+          <input type='text' name='totalLoss' value=<%= @totalLossdb %> disabled></input><br>
+        </td>
+        <td width=50%>
+          Total Profit <br>
+          <input type='text' name='totalProfit' value=<%= @totalProfitdb %> disabled></input><br>
+        </td>
+        </div>
+        </tr>
+      </table>
+      <br><br>
+      <button type="submit" class="btn btn-primary" value="Log Out" formaction="/logout">LogOut</button>
+    </div>
+  </form><br>
+ 
+</html>
