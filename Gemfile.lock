@@ -64,7 +64,7 @@ PLATFORMS
 DEPENDENCIES
   dm-core
   dm-migrations
-  dm-postgres-adapter
+  dm-postgres-adapter (~> 1.2)
   dm-sqlite-adapter
   pg
   sass

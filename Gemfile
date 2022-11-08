@@ -6,5 +6,5 @@ gem "dm-core"
 gem "dm-migrations"
 gem "thin"
 gem "pg"
-gem "dm-postgres-adapter"
+gem 'dm-postgres-adapter', '~> 1.2'
 gem "dm-sqlite-adapter", :group => :development
