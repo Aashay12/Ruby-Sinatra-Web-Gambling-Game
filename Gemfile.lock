@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -29,7 +29,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     pg (1.2.3)
     public_suffix (4.0.6)
-    rack (2.2.3)
+    rack (2.2.4)
     rack-protection (2.1.0)
       rack
     rb-fsevent (0.11.0)
@@ -64,7 +64,7 @@ PLATFORMS
 DEPENDENCIES
   dm-core
   dm-migrations
-  dm-postgres-adapter (~> 1.2)
+  dm-postgres-adapter
   dm-sqlite-adapter
   pg
   sass
