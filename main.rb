@@ -1,7 +1,7 @@
 require 'sinatra'
 require './database_info'
 
-DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/mydb.db")
+DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/mydb.db")
 
 
 DataMapper.finalize.auto_upgrade!
