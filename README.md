@@ -22,7 +22,7 @@ Environment Configuration: The code includes configurations for both the develop
 ## The '/logout' route (post '/logout') handles user logout. 
 - It updates the total win, loss, and profit values for the user in the database, clears the session variables related to login, and redirects the user back to the root route ('/').
 
-Helper Method: The save_session method is a helper function used to update and save session variables. It takes a parameter name and a money amount. It retrieves the current value of the session variable (or 0 if it doesn't exist), adds the money amount to it, and saves the updated value back to the session.
+## Helper Method: The save_session method is a helper function used to update and save session variables. It takes a parameter name and a money amount. It retrieves the current value of the session variable (or 0 if it doesn't exist), adds the money amount to it, and saves the updated value back to the session.
 
 ## Error Handling: The not_found block handles any routes that are not defined in the application and returns the "Page not found" message.
 
